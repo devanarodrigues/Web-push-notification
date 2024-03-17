@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(123, 111, 255, 0.339);
+    width: 100vw;
+    height: 100vh;
+}
+
+input {
+    display: none;
+}
+
+label {
+    text-decoration: none;
+    color: white;
+    transition: all .2s ease-in;
+    padding: 15px 40px;
+    background-color: rgba(140, 0, 255, 0.503);
+    border-radius: 10px;
+    font-size: 1.2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.518);
+    cursor: pointer;
+    position: fixed;
+}
+
+label:hover {
+    background-color: rgba(95, 0, 172, 0.936);
+}
+
+/* ================ modal ================ */
+
+#check:checked~.modal {
+    display: flex;
+    opacity: 1;
+
+}
+
+.modal {
+    width: 500px;
+    display: none;
+    height: 450px;
+    background-color: rgba(189, 122, 243, 0.503);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.518);
+    transition:  all .2s ease-out;
+    opacity: 0;
+    z-index: 5;
+}
+
+.modal img {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.518);
+
+}
+
+.modal .legenda p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.botoes a {
+    text-decoration: none;
+    color: white;
+    transition: all .2s ease-in;
+    padding: 10px 20px;
+    background-color: rgba(140, 0, 255, 0.503);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.518);
+    margin: 0 20px;
+}
+
+.botoes a:hover {
+    background-color: rgba(95, 0, 172, 0.936);
+}
